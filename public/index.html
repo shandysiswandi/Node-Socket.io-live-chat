@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <style>
+        #chat-window{
+            height: 400px;
+            overflow: auto;
+            background: #bcbdc5;
+        }
+    </style>
+    <title>Socket IO</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card bg-info">
+            <div class="card-header">
+                <h1>Aplikasi Chat Menggunakan Socket.IO</h1>
+            </div>
+            <div id="chat-window" class="card-body">
+                <div id="output">
+
+                </div>
+                <div id="feedback">
+
+                </div>
+            </div>
+            <div class="card-footer">
+                <input id="handle" type="text" class="form-control" placeholder="Nama">
+                <input id="message" type="text" class="form-control" placeholder="Pesan"><br>
+                <button id="send" type="button" class="btn btn-primary">Kirim</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- JavaScript -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/socket.io.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
